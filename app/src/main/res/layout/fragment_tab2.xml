@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".TabFragment2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp">
+
+
+        <ImageView
+            android:id="@+id/technology"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/technology_icon"
+            app:layout_constraintEnd_toStartOf="@+id/retail"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/technology_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Technology"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintEnd_toEndOf="@+id/technology"
+            app:layout_constraintStart_toStartOf="@+id/technology"
+            app:layout_constraintTop_toBottomOf="@+id/technology" />
+
+        <ImageView
+            android:id="@+id/retail"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/retail_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/technology"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/retail_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Retail"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintEnd_toEndOf="@+id/retail"
+            app:layout_constraintStart_toStartOf="@+id/retail"
+            app:layout_constraintTop_toBottomOf="@+id/retail" />
+
+        <ImageView
+            android:id="@+id/food"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/food_and_beverage_icon"
+            app:layout_constraintStart_toStartOf="@+id/technology"
+            app:layout_constraintTop_toBottomOf="@+id/technology_text" />
+
+        <TextView
+            android:id="@+id/food_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food/Beverage"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintEnd_toStartOf="@+id/entertainment_text"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/food" />
+
+        <ImageView
+            android:id="@+id/entertainment"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/entertainment_icon"
+            app:layout_constraintEnd_toEndOf="@+id/retail"
+            app:layout_constraintStart_toStartOf="@+id/retail"
+            app:layout_constraintTop_toBottomOf="@+id/retail_text" />
+
+        <TextView
+            android:id="@+id/entertainment_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entertainment"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/food_text"
+            app:layout_constraintTop_toBottomOf="@+id/entertainment" />
+
+        <ImageView
+            android:id="@+id/baby"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/baby_icon"
+            app:layout_constraintEnd_toEndOf="@+id/food"
+            app:layout_constraintStart_toStartOf="@+id/food"
+            app:layout_constraintTop_toBottomOf="@+id/food_text" />
+
+        <TextView
+            android:id="@+id/baby_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baby products"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintEnd_toStartOf="@+id/entertainment_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/baby" />
+
+        <ImageView
+            android:id="@+id/apparel"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/apparel_icon"
+            app:layout_constraintEnd_toEndOf="@+id/entertainment"
+            app:layout_constraintStart_toStartOf="@+id/entertainment"
+            app:layout_constraintTop_toBottomOf="@id/entertainment_text" />
+
+        <TextView
+            android:id="@+id/apparel_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apparel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintEnd_toEndOf="@+id/apparel"
+            app:layout_constraintStart_toStartOf="@+id/apparel"
+            app:layout_constraintTop_toBottomOf="@+id/apparel" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
